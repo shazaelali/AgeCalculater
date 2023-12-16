@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background:linear-gradient(to bottom right,#635EE2,#91d0f7,#D3F5CF);
+}
+main{
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   padding: 10px;
+  
+}
+section{
+    width: 50%;
+    background-color: #fff;
+    padding: 20px ;
+    border-radius: 10px;
+    margin: 200px auto 50px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  
+}
+.row input{
+    width: 100rem;
+    margin-right: 20px;
+    padding: 20px;
+    background-color:#e2ece129;
+    border-radius:20px;
+    border:none;
+}
+.back div{
+    background-color: #e2ece129;
+    padding: 30px;
+    border-radius: 10px;
+} 
+
+.back div span{
+    padding: 14px;
+
+}
+
+div p{
+    width: 100%;
+
+}
+.approve{
+    background-color:#cfe2ff;
+    border: 2px solid #9ec5fe;
+    color:#052c65;
+}
+.error-container{
+ background-color :#f8d7da;
+ color:#58151c;
+ border: 2px solid #f1aeb5;
+}
+#notification{
+    position: relative;
+    display: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+#notification button {
+    font-weight: 600;
+    
+    
+}
+#close-button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 8px 12px 7px 17px;
+    color: #635e5e;
+}
+.row button{
+    background-color: #add8e6e3 ;
+    color:#052c65;
+    
+    border-radius: 20px;
+    padding: 10px;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+@media only screen and (max-width:450px) {
+    section {
+
+         padding: 0px; 
+         width: 100%;
+     
+    }
+    .back div {
+        background-color: #e2ece129;
+        padding: 19px;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+    #notification{
+    font-size: 10px;
+    margin: 20px 10px 0px 10px;
+    }
+    #close-button {
+       
+        padding: 3px 12px 8px 17px;
+        
+    }
+}
+@media only screen and (max-width: 750px) {
+    section{
+       
+        width: 100%;
+     
+        
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    section{
+       
+        width: 80%;
+     
+        
+    }
+}
+
+
